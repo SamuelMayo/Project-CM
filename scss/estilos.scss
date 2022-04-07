@@ -1,0 +1,651 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code herech
+
+$Font-size-p: 15px;
+
+.centrar-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;;
+}
+
+    /* Header */
+
+.header{
+    border-bottom: 3px solid lightgray;
+    overflow: hidden;
+}
+
+    /* Index/Contenido */
+.section_container{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .section__info{
+        width: 85%;
+        .section_first_div{
+            width: 230px;
+            color: white;
+            h1{
+                font-size: 28px;
+            font-weight: bold;
+            }
+            h2{
+                font-size: 18px;
+            font-weight: bold;
+            }
+            button{
+                width: 100px;
+                height: 35px;
+                background-color: #40E2DE;
+                border-radius: 25px;
+                border: 1px solid rgba(0, 0, 0, 0.24);
+                font-size: 11px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    
+        .section_secont_div{
+            display: none;
+        }
+    }
+    
+}
+
+    /* article Memoji */
+
+.article_container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        width: 85%;
+        @extend .centrar-flex;
+        flex-direction: column;
+
+        img{
+        width: 220px;
+        }   
+
+        p{
+            margin-top: 15px;
+            font-size: $Font-size-p;
+        }
+    }
+    
+}
+
+    /* Sobre mi */
+
+.sobre__mi__container{
+    width: 100%;
+    height: 2200px;
+    margin-top: 30px;
+    position: relative;
+    @extend .centrar-flex;
+    overflow: hidden;
+
+    .img-fondo{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    div{
+        width: 85%;
+
+        .sobre__mi__info{
+            width: 100%;
+            h2{
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+                margin: 15px 0px;
+            }
+
+            p{
+                font-size: $Font-size-p;
+                text-align: justify;
+            }
+        }
+
+        .lenguajes__container{
+            width: 100%;
+            @extend .centrar-flex;
+            flex-direction: column;
+            div{
+                @extend .centrar-flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 20px 0px;
+
+                img{
+                    width: 80px;
+                }
+                p{
+                    font-size: $Font-size-p;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+    /* Contenido educativo */
+
+.cont__edu__container{
+    width: 100%;
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+    @extend .centrar-flex;
+    img{
+        position: absolute;
+        bottom: 0;
+        width: 180%;
+        height: 503px;
+        margin-left: -100px;
+        z-index: -1;
+    }
+    
+    .container__info{
+        width: 85%;
+        h2{
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .tiktok{
+            width: 100%;
+            overflow: hidden;
+            height: 590px;
+        }
+        p{
+            font-size: $Font-size-p;
+            text-align: justify;
+            margin: 15px 0px 0px 0px;
+            color: white;
+        }
+    }
+}
+
+    /*Enfoque  */
+
+.enfoque__container{
+    width: 100%;
+    height: 450px;
+    margin-top: 25px;
+    position: relative;
+    @extend .centrar-flex;
+    flex-direction: column;
+    .fondo__enfoque{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    h2{
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .enfoque__container__carousel{
+        width: 90%;
+        height: 80%;
+    }
+    .carousel__caption{
+        text-align: center;
+        margin-top: 15px;
+        
+        h5{
+            font-size: 19px;
+            font-weight: bold;
+        }
+        p{
+            font-size: $Font-size-p;
+        }
+    }
+    .carousel-indicators{
+        bottom: -20px;
+        .active{
+            background-color: #2C2B5B;
+        }
+    }
+    
+}
+
+
+    /* Hablemos */
+
+.hablemos__conteiner{
+    width: 100%;
+    height: 420px;
+    margin-top: 35px;
+    @extend .centrar-flex;
+    flex-direction: column;
+    div{
+        width: 85%;
+        height: 100%;
+        h2{
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+        form{
+            width: 100%;
+            height: 80%;
+            margin-top: 20px;
+            @extend .centrar-flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .form__container__input{
+                width: 100%;
+                height: 50px;
+                border-radius: 15px;
+                border: 3px solid rgba(0, 0, 0, 0.24);
+                padding-left: 10px;
+                font-weight: bold;
+            }
+            textarea{
+                width: 100%;
+                height: 160px;
+                border: 3px solid rgba(0, 0, 0, 0.24);
+                border-radius: 15px;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-weight: bold;
+            }
+            .submit{
+                width: 150px;
+                height: 50px;
+                background-color: rgba(44, 43, 91, 1);
+                border: none;
+                border-radius: 15px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.decoration__container{
+    width: 100%;
+    div{
+        width: 80%;
+        display: flex;
+        img{
+            width: 150px;
+            height: 135px;
+        }
+        .decoration__2{
+            margin-top: 45px;
+        }
+    }
+}
+
+
+    /* Footer */
+
+.footer__container{
+    position: relative;
+    width: 100%;
+    height: 348px;
+    @extend .centrar-flex;
+    flex-direction: column;
+    .img__fondo__footer{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .footer__items{
+        width: 85%;
+        height: 95%;
+        @extend .centrar-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .rrss{
+            width: 100%;
+            height: 63px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            a{
+                .img__rrss{
+                    width: 63px;
+                }
+            }
+        }
+        .contacto{
+            width: 100%;
+            height: 57px;
+            margin-top: 30px;
+            h4{
+                color: white;
+                font-size: 21px;
+            }
+        }
+        .privacy{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            h5{
+                color: white;
+                font-size: 17px;
+            }
+            p{
+                border-right: solid 1px white ;
+                color:#2C2B5B;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 481px){
+
+    /* Index/Contenido */
+
+    .section_container{
+        height: 450px;
+        display: flex;
+        .section__info{
+            .section_first_div{
+                width: 280px;
+                h1{
+                    font-size: 46px;
+                }
+                h2{
+                    font-size: 29px;
+                }
+                button{
+                    width: 190px;
+                    height: 50px;
+                    font-size: 17px;
+                }
+            }
+            .section_secont_div{
+                display: none;
+            }
+            
+        }
+        
+    }
+    
+        /* article Memoji */
+
+    .article_container{
+        width: 100%;
+        height: 500px;
+        
+        div{
+            width: 90%;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                width: 370px;
+            }
+            p{
+                font-size: 17px;
+                width: 330px;
+            }
+        }
+    }
+
+    /* Sobre mi */
+
+    .sobre__mi__container{
+        height: 1750px;
+        div{
+            .sobre__mi__info{
+                h2{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 17px;
+                    text-align: center;
+                }
+            }
+
+            .lenguajes__container{
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-evenly;
+                div{
+                    width: 280px;
+                    height: 286px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    img{
+                        width: auto;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Contenido educativo */
+
+    .cont__edu__container{
+        height: 860px;
+        img{
+            width: 130%;
+            height: 550px;
+            object-fit: cover;
+        }
+        .container__info{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-size: 35px;
+            }
+            .tiktok{
+                width: 330px;
+            }
+            p{
+                width: 440px;
+                font-size: 17px;
+            }
+        }
+    }
+    
+
+    /*Enfoque  */
+
+    .enfoque__container{
+        height: 545px;
+        h2{
+            font-size: 35px;
+        }
+        .enfoque__container__carousel{
+            
+            .carousel{
+                display: flex;
+                justify-content: center;
+                .carousel-inner{
+                    width: 85%;
+                    .img__carousel__1{
+                        height: 340px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    /* Hablemos */
+
+    .hablemos__conteiner{
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-size: 35px;
+            }
+            .form__container{
+                width: 75%;
+            }
+        }
+    }
+
+    .decoration__container{
+        div{
+            justify-content: space-around;
+        }
+    }
+
+    /* Footer */
+
+    .footer__container{
+        .footer__items{
+            .contacto{
+                width: 80%;
+            }
+            .privacy{
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 769px){
+    .section_container{
+        height: 500px;
+        .section__info{
+            width: 930px;
+            display: flex;
+            align-items: center;
+            margin-left: 70px;
+            .section_secont_div{
+                display: block;
+                height: 390px;
+                img{
+                    width: 650px;
+                    height: 375px;
+                }
+            }
+        }
+    }
+
+    .article_container{
+        div{
+            p{
+                width: 500px;
+            }
+            img{
+                width: 500px;
+            }
+        }
+    }
+
+    /* Sobre mi */
+
+    .sobre__mi__container{
+        height: 1075px;
+        div{
+            .sobre__mi__info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p{
+                    width: 700px;
+                }
+            }
+        }
+    }
+
+    /* Contenido educativo */
+
+    .cont__edu__container{
+
+        img{
+            width: 110%;
+            height: 635px;
+            object-fit: revert;
+            margin-left: 58px;
+            bottom: -50px;
+        }
+        .container__info{
+            .tiktok{
+                width: 543px;
+            }
+        }
+    }
+
+    /*Enfoque  */
+
+    .enfoque__container{
+        height: 585px;
+        h2{
+            margin-bottom: 25px;
+        }
+        .enfoque__container__carousel{
+            .carousel{
+                .carousel-inner{
+                    width: 45%;
+                }
+            }
+        }
+    }
+
+    /* Hablemos */
+
+    .hablemos__conteiner{
+        div{
+            .form__container{
+                width: 45%;
+            }
+        }
+    }
+
+    /* Footer */
+
+    .footer__container{
+        .footer__items{
+            .rrss{
+                width: 80%;
+            }
+            .contacto{
+                width: 55%;
+            }
+            .privacy{
+                width: 55%;
+            }
+        }
+    }
+}
